@@ -51,12 +51,12 @@ class ClientController extends Controller
     /**
     * Display the specified resource.
     *
-    * @param  \App\company  $client
+    * @param  \App\client  $client
     * @return \Illuminate\Http\Response
     */
     public function show(Client $client)
     {
-        return view('clients.show',compact('company'));
+        return view('clients.show',compact('client'));
     }
 
     /**
@@ -67,14 +67,14 @@ class ClientController extends Controller
     */
     public function edit(Client $client)
     {
-        return view('clients.edit',compact('company'));
+        return view('clients.edit',compact('client'));
     }
 
     /**
     * Update the specified resource in storage.
     *
     * @param  \Illuminate\Http\Request  $request
-    * @param  \App\company  $client
+    * @param  \App\client  $client
     * @return \Illuminate\Http\Response
     */
     public function update(Request $request, Client $client)
