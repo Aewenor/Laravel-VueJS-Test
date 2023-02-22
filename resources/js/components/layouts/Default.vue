@@ -11,6 +11,9 @@
                         <li class="nav-item">
                             <router-link :to="{name:'dashboard'}" class="nav-link">Home <span class="sr-only">(current)</span></router-link>
                         </li>
+                        <li class="nav-item">
+                            <a href="/clients" class="nav-link">Clients</a>
+                        </li>
                     </ul>
                     <div class="d-flex">
                         <ul class="navbar-nav">
